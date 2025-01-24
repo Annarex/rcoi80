@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Changeling Neo Stencil';
+    src: url('/public/fonts/ChangelingNeoStencil.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
