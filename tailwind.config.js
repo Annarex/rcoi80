@@ -17,23 +17,8 @@ export default {
                 'changeling': ['Changeling Neo Stencil', 'sans-serif'],
             },
 
-        },
-        strokeWidth: {
-            '1': '1',
-            '2': '2',
-            '4': '4',
-            '8': '8',
-          },
-          colors: {
-            customWhite: '#ffffff',
-            customBlue: '#3b82f6',
-          },
+        }
     },
-    variants: {
-        extend: {
-          stroke: ['hover', 'focus'],
-        },
-      },
     plugins: [
         require('flowbite/plugin'),
         [forms],
