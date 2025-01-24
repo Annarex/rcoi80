@@ -2,7 +2,7 @@
 
 <!-- drawer init and show -->
 <div class="relative top-0 left-0 right-0 bg-gray-200 h-40 md:h-28 w-full"></div> {{-- shadow --}}
-<div id="header" class="fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between h-fit p-1 z-10 bg-gray-900 transition-all duration-150 ease-in-out"> <!--transition-all duration-300 ease-in-out bg-transparent -->
+<div id="header" class="fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between h-fit p-1 z-10 bg-gray-900 bg-opacity-50 transition-all duration-150 ease-in-out"> <!--transition-all duration-300 ease-in-out bg-transparent -->
     <div class="flex-initial flex-nowrap w-14 content-center p-2">
         <button class="text-white bg-gray-300 hover:ring-gray-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
           <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -102,11 +102,11 @@
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
             if (window.scrollY < 150) {
-                header.classList.remove('bg-opacity-20');
+                header.classList.remove('bg-opacity-35');
                 header.classList.add('bg-opacity-50');
             } else {
                 header.classList.remove('bg-opacity-50');
-                header.classList.add('bg-opacity-20', );
+                header.classList.add('bg-opacity-35', );
             }
         });
     </script>
