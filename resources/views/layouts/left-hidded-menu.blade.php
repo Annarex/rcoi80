@@ -3,18 +3,18 @@
 <!-- drawer init and show -->
 <div class="relative top-0 left-0 right-0 bg-gray-200 h-40 md:h-28 w-full"></div>
 <div id="lhm" class="fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between h-fit p-2 z-10 bg-gray-900 bg-opacity-50 transition-all duration-150 ease-in-out"> <!--transition-all duration-300 ease-in-out bg-transparent -->
-    <div class="flex-initial flex-nowrap w-14 content-center p-2">
+    <div class="flex-initial w-14 content-center p-2">
         <button class="text-white bg-gray-300 hover:ring-gray-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
           <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
         </button>
     </div>
-    <div class="flex-grow flex justify-center">
+    <div class="flex flex-grow justify-center">
         <x-application-logo class="w-auto h-16 md:h-20 lg:h-24" />
     </div>
     <div class="flex-shrink-0 justify-center" >
-      <p class="text-white whitespace-nowrap">Адрес 283001, ДНР, Г.О. Донецкий,<br>г. Донецк, ул. Артема, 129А<br>Тел +7(856)-305-18-86<br>Е-mail: rtsoi.donriro@yandex.ru</p>
+      <p class="text-white whitespace-nowrap overflow-hidden">Адрес 283001, ДНР, Г.О. Донецкий,<br>г. Донецк, ул. Артема, 129А<br>Тел +7(856)-305-18-86<br>Е-mail: rtsoi.donriro@yandex.ru</p>
     </div>
 
 </div>
