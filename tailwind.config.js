@@ -23,6 +23,11 @@ export default {
                 //   letterSpacing: '-0.01em',
                   fontWeight: '300',
                 }],
+                'ext_sm': ['1.25rem', {
+                  lineHeight: '1.55',
+                //   letterSpacing: '-0.01em',
+                  fontWeight: '300',
+                }],
             },
         },
         

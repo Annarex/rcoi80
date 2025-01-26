@@ -26,7 +26,7 @@
           </svg>
         </button>
     </div>
-    <div class="flex flex-grow justify-center">
+    <div class="flex flex-grow space-y-4 justify-center">
         <x-application-logo class="w-auto h-16 md:h-20 lg:h-24" />
     </div>
     <div class="flex justify-center items-center w-full  md:w-auto" >
