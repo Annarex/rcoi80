@@ -17,54 +17,47 @@
     @else
         @vite(['resources/css/tailwind.css'])
     @endif
-
 </head>
 
-<body class="font-sans antialiased dark:bg-black dark:text-white/50 min-w-[360px] w-full">
-    <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+<body class="font-ubuntu antialiased  min-w-[360px] w-full"><!--dark:bg-black dark:text-white/50-->
+    <div class="bg-gray-50"> <!-- text-black/50 dark:bg-black dark:text-white/50-->
         @include('layouts.left-hidded-menu')
-        <div class="relative bg-gray-200 justify-around items-center h-screen w-full">
-            <div class="flex h-full w-3/4"> <!--shadow h-svh -->
-                <div class="flex flex-col justify-center items-start w-1/2">
-                    <h1 class="text-4xl font-bold">РЕГИОНАЛЬНЫЙ ЦЕНТР ОБРАБОТКИ ИНФОРМАЦИИ</h1>
-                    <p class="text-lg">Донецкая народная республика</p>
+        <div
+            class="bg-gray-200 flex justify-center items-center [height:calc(100vh-10rem)] md:[height:calc(100vh-7rem)]">
+            <div class="flex flex-wrap w-3/4 md:w-5/6">
+                <div class="flex flex-col justify-center items-start w-full md:w-1/2 text-white ">
+                    <h1 class="text-2xl md:text-5xl font-bold text-outline">РЕГИОНАЛЬНЫЙ ЦЕНТР ОБРАБОТКИ ИНФОРМАЦИИ</h1>
+                    <br>
+                    <p class="text-xl">Донецкая народная республика</p>
                 </div>
-                <div class="relative flex justify-center items-center h-full w-1/2">
-                    <img src="{{asset('images/datacenter.png')}} " class="absolute" alt="Компьютер" />
+                <div class="flex justify-center items-center h-auto md:h-full w-full md:w-1/2">
+                    <img src="{{url('images/datacenter.png')}} " alt="Компьютер" />
                 </div>
-                
-
             </div>
-            <x-figure-cloud class="flex absolute w-40 h-40" />
+            <div class="absolute w-max h-screen"> <x-figure-cloud class="w-max h-max" /> </div>
         </div>
+        {{-- Блок описания предприятия --}}
+        <div class="font-ubuntu text-[#333333] container mx-auto flex justify-center w-3/4 md:w-3/5  py-20">
+            <div class="w-full text-ext_xl text-justify">
+                <p class=""> <span class="text-left font-bold">Региональный центр обработки информации (РЦОИ)</span>
+                    <span class="">является
+                        структурным подразделением Государственного бюджетного образовательного учреждения
+                        дополнительного профессионального образования «Донецкий республиканский институт
+                        развития образования».</span>
+                </p>
+                <p> <span class="font-bold">Учредитель:</span>
+                    <span> Министерство образования и науки Донецкой Народной
+                        Республики</span>
+                </p>
+                <p> <span class="font-bold">Адрес учредителя:</span>
+                    <span> ул. Университетская, 83А, г. Донецк, 283048</span>
+                </p>
+                <p><span class="font-bold">Целью</span>
+                    <span> создания РЦОИ является обеспечение информационного,
+                        организационного и технологического сопровождения ГИА в Донецкой Народной
+                        Республике, а также мониторинговых процедур по оценке качества образования.</span>
+                </p>
 
-        <div class="bg-white shadow h-40 md:h-44 w-full">
-            <div class="t059">
-                <div class="t-container t-align_center">
-                    <div class="t-col t-col_12">
-                        <div class="t059__text-impact t-text-impact t-text-impact_xs t-animate t-animate_started"
-                            data-animate-style="fadeinleft" field="text">
-                            <p style="text-align: left;"><strong style="color: rgb(51, 51, 51);">
-                                    Региональный центр
-                                    обработки информации (РЦОИ) </strong><span style="color: rgb(51, 51, 51);">является
-                                    структурным подразделением Государственного бюджетного образовательного учреждения
-                                    дополнительного профессионального образования «Донецкий республиканский институт
-                                    развития образования».</span></p>
-                            <p style="text-align: left;"><strong
-                                    style="color: rgb(51, 51, 51);">Учредитель:</strong><span
-                                    style="color: rgb(51, 51, 51);"> Министерство образования и науки Донецкой Народной
-                                    Республики</span></p>
-                            <p style="text-align: left;"><strong style="color: rgb(51, 51, 51);">Адрес
-                                    учредителя:</strong><span style="color: rgb(51, 51, 51);"> ул. Университетская, 83А,
-                                    г. Донецк, 283048</span></p>
-                            <p style="text-align: left;"><strong style="color: rgb(51, 51, 51);">Целью</strong><span
-                                    style="color: rgb(51, 51, 51);"> создания РЦОИ является обеспечение информационного,
-                                    организационного и технологического сопровождения ГИА в Донецкой Народной
-                                    Республике, а также мониторинговых процедур по оценке качества образования.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

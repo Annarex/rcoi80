@@ -13,11 +13,19 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                // sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 'changeling': ['Changeling Neo Stencil', 'sans-serif'],
+                'ubuntu': ['Ubuntu','Arial','sans-serif'],
             },
-
-        }
+            fontSize: {
+                'ext_xl': ['1.625rem', {
+                  lineHeight: '1.5',
+                //   letterSpacing: '-0.01em',
+                  fontWeight: '300',
+                }],
+            },
+        },
+        
     },
     plugins: [
         require('flowbite/plugin'),

@@ -1,7 +1,23 @@
-
+<script>
+  window.addEventListener('scroll', function() {
+      const header = document.getElementById('lhm');
+      if (window.scrollY < 150) {
+          header.classList.remove('bg-opacity-35');
+          header.classList.add('bg-opacity-50');
+      } else {
+          header.classList.remove('bg-opacity-50');
+          header.classList.add('bg-opacity-35', );
+      }
+  });
+  function adjustFixedHeight() {
+    document.getElementById('back_lhm').style.height = `${document.getElementById('lhm').offsetHeight}px`;
+  }
+  window.onload = adjustFixedHeight;
+  window.onresize = adjustFixedHeight;
+</script>
 
 <!-- drawer init and show -->
-<div class="relative top-0 left-0 right-0 bg-gray-200 h-40 md:h-28 w-full"></div>
+<div id="back_lhm" class="relative top-0 left-0 right-0 bg-gray-200 h-40 md:h-28 w-full"></div>
 <div id="lhm" class="fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between h-fit p-2 z-10 bg-gray-900 bg-opacity-50 transition-all duration-150 ease-in-out"> <!--transition-all duration-300 ease-in-out bg-transparent -->
     <div class="flex-initial w-14 content-center p-2">
         <button class="text-white bg-gray-300 hover:ring-gray-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
@@ -13,8 +29,8 @@
     <div class="flex flex-grow justify-center">
         <x-application-logo class="w-auto h-16 md:h-20 lg:h-24" />
     </div>
-    <div class="flex-shrink-0 justify-center" >
-      <p class="text-white whitespace-nowrap overflow-hidden">Адрес 283001, ДНР, Г.О. Донецкий,<br>г. Донецк, ул. Артема, 129А<br>Тел +7(856)-305-18-86<br>Е-mail: rtsoi.donriro@yandex.ru</p>
+    <div class="flex justify-center items-center w-full  md:w-auto" >
+        <p class="text-white whitespace-nowrap overflow-hidden text-sm">Адрес 283001, ДНР, Г.О. Донецкий,<br>г. Донецк, ул. Артема, 129А<br>Тел +7(856)-305-18-86<br>Е-mail: rtsoi.donriro@yandex.ru</p>
     </div>
 
 </div>
@@ -97,15 +113,3 @@
       </ul>
    </div>
 </div>
-    <script>
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('lhm');
-            if (window.scrollY < 150) {
-                header.classList.remove('bg-opacity-35');
-                header.classList.add('bg-opacity-50');
-            } else {
-                header.classList.remove('bg-opacity-50');
-                header.classList.add('bg-opacity-35', );
-            }
-        });
-    </script>
